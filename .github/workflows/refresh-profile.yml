@@ -41,7 +41,7 @@ jobs:
         uses: soulteary/github-profile-trophy-action@v1
         with:
           options: username=${{ github.repository_owner }}&theme=aura&column=3&row=1&margin-w=12&margin-h=12&title=Commits,Experience,PullRequest
-          path: profile/trophy.svg
+          path: profile/trophy-highlights.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate activity graph
