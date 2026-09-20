@@ -162,57 +162,74 @@ This repository is an independent derivative of MIT-licensed UTDNebula work, as 
 
 `January 2026 – Present`
 
-Building data infrastructure and applied ML workflows for operational decision-making.
+Building distributed platform services, cloud automation, and applied AI workflows.
 
 Scope of work:
 
-- Built batch and streaming pipelines handling more than 500,000 events per day for forecasting, segmentation, anomaly detection, and inference.
-- Improved data validation and integration workflows; portfolio reports an 82% reduction in data-quality defects.
-- Integrated Odoo ERP with Python, REST APIs, PostgreSQL, and SQL Server.
+- Architected multithreaded Java and Spring Boot services with Temporal workflows for environment provisioning, data processing, model execution, approvals, retries, and recovery.
+- Built Python and LangGraph automation to diagnose platform failures, recommend remediations, run approved recovery steps, and produce auditable incident summaries.
+- Standardized Kubernetes and Terraform modules for AWS, Azure, and GCP environment requests and deployment policies.
+- Reduced data and workflow defects by 82% across systems processing more than 500,000 operations daily through contract testing, schema validation, idempotency, and reconciliation.
+- Maintained 99.5% availability and cut incident resolution from 48 hours to 2 hours with observability and automated triage, rollback, and escalation.
 
-`Python` `SQL` `Data Pipelines` `Machine Learning` `REST APIs`
+`Java` `Spring Boot` `Python` `Temporal` `Kubernetes` `Terraform` `LangGraph` `Observability`
 
 ### Software Engineer — Weboni
 
 `January 2025 – December 2025`
 
-Developed enterprise applications and integrations across frontend, backend, and deployment systems.
+Developed enterprise platform services, interfaces, and resilient event-driven integrations.
 
 Scope of work:
 
-- Built application features using React, Angular, Node.js, Python, Java, and C#.
-- Supported Docker and AWS CI/CD improvements; portfolio reports a 40% increase in deployment throughput.
-- Connected ERP and CRM systems through APIs and database integrations.
+- Shipped Java and Spring microservices, REST APIs, React and Angular interfaces, and operational visualizations.
+- Built Kafka-driven services using MySQL, MongoDB, and Redis with caching, idempotency, retries, and concurrency controls.
+- Increased deployment throughput by 40% through Docker, Kubernetes releases, Terraform plans, and automated test gates.
+- Added guarded GenAI tool contracts, human approvals, audit logs, and evaluation cases to existing platform services.
 
-`React` `Angular` `Node.js` `AWS` `Docker` `CI/CD`
+`Java` `Spring` `React` `Angular` `Kafka` `Kubernetes` `Terraform` `CI/CD`
 
 ### Data Science Intern — Renuity
 
 `September 2024 – December 2024`
 
-Worked on customer-data processing, predictive analysis, and reporting automation.
+Built customer-data pipelines, predictive analysis, and repeatable reporting workflows.
 
 Scope of work:
 
-- Built ETL workflows for more than 50,000 customer records per day.
-- Developed a churn-ranking approach reported at 83% precision in the portfolio.
-- Automated reporting to make analysis easier to repeat and review.
+- Built asynchronous ingestion and analytics pipelines processing more than 50,000 customer records daily with Python, Java, Kafka, PostgreSQL, and AWS.
+- Developed a churn-ranking model with 83% precision; targeted interventions contributed to a 15% reduction in churn across prioritized segments.
+- Reduced recurring reporting time by 70% through automated ETL, scoring, validation, dashboards, and stakeholder summaries.
 
-`Python` `SQL` `ETL` `Predictive Modeling` `Reporting`
+`Python` `Java` `Kafka` `PostgreSQL` `AWS` `ETL` `Predictive Modeling`
+
+### Software Engineer Intern — Weboni
+
+`May 2024 – August 2024`
+
+Developed backend services and monitoring for operational applications.
+
+Scope of work:
+
+- Built Java and Spring Boot services, JavaScript interfaces, REST integrations, and MySQL and MongoDB components handling more than 50,000 application events daily.
+- Reduced production diagnostic time by 60% with structured ELK logging, metrics, alerts, troubleshooting dashboards, and root-cause documentation.
+- Improved defect detection by 42% through JUnit, Mockito, API, integration, regression, and load tests incorporated into CI/CD.
+
+`Java` `Spring Boot` `JavaScript` `REST APIs` `MySQL` `MongoDB` `ELK` `Testing`
 
 ### Software Engineer — Nebula Labs
 
 `August 2023 – May 2024`
 
-Contributed to full-stack academic discovery software spanning interface, API, and data layers.
+Built full-stack academic discovery software across interface, service, and data layers.
 
 Scope of work:
 
-- Developed React and TypeScript features for academic search and comparison.
-- Worked with Go, Python, PostgreSQL, and MongoDB across the service layer.
-- Collaborated on product features informed by student use cases.
+- Built React interfaces, microservices, and REST APIs for an academic platform serving more than 2,000 active users and making information dating to 2017 searchable.
+- Designed reusable services, data-access layers, background jobs, and deployment components using Java, Go, Python, PostgreSQL, MongoDB, Docker, and Kubernetes.
+- Owned issue triage, debugging, pull requests, peer reviews, testing, documentation, and deployment validation with cross-functional contributors.
 
-`React` `TypeScript` `Go` `Python` `PostgreSQL`
+`Java` `Go` `Python` `TypeScript` `React` `PostgreSQL` `MongoDB` `Docker`
 
 ---
 
