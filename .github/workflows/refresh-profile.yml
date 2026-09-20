@@ -40,7 +40,7 @@ jobs:
       - name: Generate GitHub trophies
         uses: soulteary/github-profile-trophy-action@v1
         with:
-          options: username=${{ github.repository_owner }}&theme=aura&column=3&row=2&margin-w=12&margin-h=12&rank=-UNKNOWN
+          options: username=${{ github.repository_owner }}&theme=aura&column=3&row=1&margin-w=12&margin-h=12&title=Commits,Experience,PullRequest
           path: profile/trophy.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
