@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out profile repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Generate GitHub statistics
         uses: stats-organization/github-readme-stats-action@v2
@@ -40,7 +40,7 @@ jobs:
       - name: Generate GitHub trophies
         uses: soulteary/github-profile-trophy-action@v1
         with:
-          options: username=${{ github.repository_owner }}&theme=aura&column=4&row=2&margin-w=12&margin-h=12
+          options: username=${{ github.repository_owner }}&theme=aura&column=3&row=2&margin-w=12&margin-h=12&rank=-UNKNOWN
           path: profile/trophy.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
