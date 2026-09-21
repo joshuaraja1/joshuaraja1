@@ -162,74 +162,74 @@ This repository is an independent derivative of MIT-licensed UTDNebula work, as 
 
 `January 2026 – Present`
 
-Building distributed platform services, cloud automation, and applied AI workflows.
+Building production credit-risk decisioning, inference, and model-monitoring systems.
 
 Scope of work:
 
-- Architected multithreaded Java and Spring Boot services with Temporal workflows for environment provisioning, data processing, model execution, approvals, retries, and recovery.
-- Built Python and LangGraph automation to diagnose platform failures, recommend remediations, run approved recovery steps, and produce auditable incident summaries.
-- Standardized Kubernetes and Terraform modules for AWS, Azure, and GCP environment requests and deployment policies.
-- Reduced data and workflow defects by 82% across systems processing more than 500,000 operations daily through contract testing, schema validation, idempotency, and reconciliation.
-- Maintained 99.5% availability and cut incident resolution from 48 hours to 2 hours with observability and automated triage, rollback, and escalation.
+- Designed and deployed a multi-client credit-risk decisioning pipeline processing 250,000+ scoring events daily across application, prescreening, portfolio-monitoring, and cross-sell eligibility workflows.
+- Built FastAPI inference services on AWS with schema validation, audit logging, PII controls, and automated deployment, supporting real-time and batch-scoring workloads under a 99.95% service objective.
+- Developed data-quality and model-monitoring checks for schema drift, anomalous inputs, and prediction distributions, reducing recurring production data-quality defects by 82%.
+- Implemented and evaluated an XGBoost fraud-detection model, achieving 97% recall at a 2% false-positive rate on the approved evaluation dataset.
+- Partnered with product, risk, compliance, and engineering stakeholders to translate policy requirements into explainable model outputs, reason codes, monitoring thresholds, and release criteria.
 
-`Java` `Spring Boot` `Python` `Temporal` `Kubernetes` `Terraform` `LangGraph` `Observability`
+`Python` `FastAPI` `XGBoost` `pandas` `PostgreSQL` `Kafka` `AWS` `Docker` `GitHub Actions` `Grafana` `Prometheus`
 
 ### Software Engineer — Weboni
 
 `January 2025 – December 2025`
 
-Developed enterprise platform services, interfaces, and resilient event-driven integrations.
+Developed services and delivery infrastructure for a microservices-based loan-origination platform.
 
 Scope of work:
 
-- Shipped Java and Spring microservices, REST APIs, React and Angular interfaces, and operational visualizations.
-- Built Kafka-driven services using MySQL, MongoDB, and Redis with caching, idempotency, retries, and concurrency controls.
-- Increased deployment throughput by 40% through Docker, Kubernetes releases, Terraform plans, and automated test gates.
-- Added guarded GenAI tool contracts, human approvals, audit logs, and evaluation cases to existing platform services.
+- Developed services for a microservices-based loan-origination platform processing 200,000+ daily API and workflow events, reducing average processing time from 24 hours to 4 hours.
+- Implemented serverless services with AWS Lambda and API Gateway, reducing infrastructure cost by 40% while supporting variable client traffic.
+- Built Grafana and Prometheus dashboards covering 50+ service, data, and reliability metrics, reducing incident-detection time by 70%.
+- Improved release pipelines through automated tests, quality gates, and deployment checks, increasing deployment throughput by 40% while enabling repeatable, lower-risk rollbacks.
 
-`Java` `Spring` `React` `Angular` `Kafka` `Kubernetes` `Terraform` `CI/CD`
+`Java` `Python` `TypeScript` `React` `Angular` `Node.js` `REST APIs` `PostgreSQL` `Redis` `AWS` `Docker` `CI/CD`
 
 ### Data Science Intern — Renuity
 
 `September 2024 – December 2024`
 
-Built customer-data pipelines, predictive analysis, and repeatable reporting workflows.
+Built customer-data pipelines, predictive analysis, and decision dashboards.
 
 Scope of work:
 
-- Built asynchronous ingestion and analytics pipelines processing more than 50,000 customer records daily with Python, Java, Kafka, PostgreSQL, and AWS.
-- Developed a churn-ranking model with 83% precision; targeted interventions contributed to a 15% reduction in churn across prioritized segments.
-- Reduced recurring reporting time by 70% through automated ETL, scoring, validation, dashboards, and stakeholder summaries.
+- Built a customer-churn pipeline with Python, SQL, pandas, and scikit-learn, achieving 83% precision and supplying prioritized customer segments to retention stakeholders.
+- Automated Airflow and AWS Lambda ETL workflows processing 50,000+ customer records daily, reducing pipeline runtime from two hours to 15 minutes.
+- Developed Streamlit, Plotly, and Tableau dashboards for churn, customer segmentation, and anomaly analysis, cutting recurring manual reporting time by 50%.
 
-`Python` `Java` `Kafka` `PostgreSQL` `AWS` `ETL` `Predictive Modeling`
+`Python` `SQL` `pandas` `scikit-learn` `XGBoost` `Airflow` `PostgreSQL` `AWS Lambda` `Tableau` `Streamlit` `Plotly`
 
 ### Software Engineer Intern — Weboni
 
 `May 2024 – August 2024`
 
-Developed backend services and monitoring for operational applications.
+Developed APIs, testing, authentication, and monitoring for a loan-application workflow.
 
 Scope of work:
 
-- Built Java and Spring Boot services, JavaScript interfaces, REST integrations, and MySQL and MongoDB components handling more than 50,000 application events daily.
-- Reduced production diagnostic time by 60% with structured ELK logging, metrics, alerts, troubleshooting dashboards, and root-cause documentation.
-- Improved defect detection by 42% through JUnit, Mockito, API, integration, regression, and load tests incorporated into CI/CD.
+- Developed REST APIs for a loan-application workflow handling 50,000+ daily requests; improved response time by 40% through query optimization and Redis caching.
+- Added Jest and Cypress unit and integration tests, increasing coverage to 85% and reducing post-deployment defects by 40%.
+- Implemented OAuth 2.0/JWT authentication and Prometheus/Grafana monitoring for secure access and faster incident diagnosis.
 
-`Java` `Spring Boot` `JavaScript` `REST APIs` `MySQL` `MongoDB` `ELK` `Testing`
+`Java` `JavaScript` `React` `REST APIs` `SQL` `PostgreSQL` `Redis` `Docker` `Jest` `Cypress` `Git` `CI/CD`
 
 ### Software Engineer — Nebula Labs
 
 `August 2023 – May 2024`
 
-Built full-stack academic discovery software across interface, service, and data layers.
+Built full-stack university records software across interface, service, and data layers.
 
 Scope of work:
 
-- Built React interfaces, microservices, and REST APIs for an academic platform serving more than 2,000 active users and making information dating to 2017 searchable.
-- Designed reusable services, data-access layers, background jobs, and deployment components using Java, Go, Python, PostgreSQL, MongoDB, Docker, and Kubernetes.
-- Owned issue triage, debugging, pull requests, peer reviews, testing, documentation, and deployment validation with cross-functional contributors.
+- Built full-stack features for a university records platform serving 2,000+ active users using React, Go, Python, and PostgreSQL.
+- Reduced average query latency from 500 ms to 80 ms through indexing, query-plan analysis, and schema changes.
+- Created a Jenkins and Docker CI/CD pipeline that increased deployment frequency from twice monthly to five times weekly.
 
-`Java` `Go` `Python` `TypeScript` `React` `PostgreSQL` `MongoDB` `Docker`
+`Go` `Python` `TypeScript` `React` `REST APIs` `PostgreSQL` `MongoDB` `Elasticsearch` `Docker` `Jenkins` `Git`
 
 ---
 
