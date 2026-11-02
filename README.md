@@ -30,9 +30,9 @@
 
 ## About
 
-I am a software engineer and AI/ML builder pursuing an M.S. in Business Analytics and AI at UT Dallas. I build across the stack—from data pipelines and backend services to the interfaces people use to make decisions.
+I am a machine learning engineer and software builder pursuing an M.S. in Business Analytics and AI at UT Dallas. I build across the stack—from production forecasting pipelines and backend services to the interfaces people use to make decisions.
 
-My work includes production data integrations, applied machine learning, retrieval-based AI systems, and full-stack products. I care about clear architecture, measurable outcomes, and shipping tools that solve concrete problems.
+My work includes demand forecasting, model deployment and monitoring, commerce microservices, data engineering, and full-stack products. I care about clear architecture, measurable outcomes, and shipping tools that solve concrete problems.
 
 I bring a product mindset to engineering: understand the user, make the system dependable, and measure whether the result actually helps.
 
@@ -162,32 +162,35 @@ This repository is an independent derivative of MIT-licensed UTDNebula work, as 
 
 `January 2026 – Present`
 
-Building production credit-risk decisioning, inference, and model-monitoring systems.
+**Client:** Lululemon
+
+Building production demand-forecasting, model-deployment, and monitoring systems for apparel planning.
 
 Scope of work:
 
-- Designed and deployed a multi-client credit-risk decisioning pipeline processing 250,000+ scoring events daily across application, prescreening, portfolio-monitoring, and cross-sell eligibility workflows.
-- Built FastAPI inference services on AWS with schema validation, audit logging, PII controls, and automated deployment, supporting real-time and batch-scoring workloads under a 99.95% service objective.
-- Developed data-quality and model-monitoring checks for schema drift, anomalous inputs, and prediction distributions, reducing recurring production data-quality defects by 82%.
-- Implemented and evaluated an XGBoost fraud-detection model, achieving 97% recall at a 2% false-positive rate on the approved evaluation dataset.
-- Partnered with product, risk, compliance, and engineering stakeholders to translate policy requirements into explainable model outputs, reason codes, monitoring thresholds, and release criteria.
+- Built an apparel demand-forecasting service for the planning team, developing Python pipelines on Amazon SageMaker to train gradient-boosted and PyTorch sequence models using sales, inventory, and promotion data from Snowflake.
+- Deployed models through NVIDIA Triton with shadow validation and canary rollouts, comparing new versions against the incumbent before expanding production traffic.
+- Improved forecast error from approximately 32% to 27% sMAPE, helping planners make better-informed production and inventory allocation decisions.
+- Implemented monitoring for data drift and forecast accuracy, with automated alerts and retraining triggers to identify deteriorating model performance.
 
-`Python` `FastAPI` `XGBoost` `pandas` `PostgreSQL` `Kafka` `AWS` `Docker` `GitHub Actions` `Grafana` `Prometheus`
+`Python` `PyTorch` `Gradient Boosting` `Amazon SageMaker` `Snowflake` `NVIDIA Triton` `MLOps` `Data Drift Monitoring`
 
 ### Software Engineer — Weboni
 
 `January 2025 – December 2025`
 
-Developed services and delivery infrastructure for a microservices-based loan-origination platform.
+**Client:** Costco
+
+Modernized order-management and checkout services for a high-traffic commerce platform.
 
 Scope of work:
 
-- Developed services for a microservices-based loan-origination platform processing 200,000+ daily API and workflow events, reducing average processing time from 24 hours to 4 hours.
-- Implemented serverless services with AWS Lambda and API Gateway, reducing infrastructure cost by 40% while supporting variable client traffic.
-- Built Grafana and Prometheus dashboards covering 50+ service, data, and reliability metrics, reducing incident-detection time by 70%.
-- Improved release pipelines through automated tests, quality gates, and deployment checks, increasing deployment throughput by 40% while enabling repeatable, lower-risk rollbacks.
+- Extracted order-management and checkout functionality from a legacy Oracle Commerce/ATG platform into a Java Spring microservice, completing the production cutover without data loss.
+- Reduced p95 checkout latency from 800 to 450 milliseconds through Redis caching and PostgreSQL read replicas, relieving database contention on customer-facing workflows.
+- Introduced Kafka-based order events to decouple checkout from notification and billing services, reducing order-processing errors by approximately 30%.
+- Containerized and deployed the service to Kubernetes through CI/CD, establishing release checks supported by Grafana dashboards for latency, error rates, and queue health.
 
-`Java` `Python` `TypeScript` `React` `Angular` `Node.js` `REST APIs` `PostgreSQL` `Redis` `AWS` `Docker` `CI/CD`
+`Java` `Spring` `Oracle Commerce/ATG` `PostgreSQL` `Redis` `Kafka` `Docker` `Kubernetes` `CI/CD` `Grafana`
 
 ### Data Science Intern — Renuity
 
@@ -197,39 +200,44 @@ Built customer-data pipelines, predictive analysis, and decision dashboards.
 
 Scope of work:
 
-- Built a customer-churn pipeline with Python, SQL, pandas, and scikit-learn, achieving 83% precision and supplying prioritized customer segments to retention stakeholders.
-- Automated Airflow and AWS Lambda ETL workflows processing 50,000+ customer records daily, reducing pipeline runtime from two hours to 15 minutes.
-- Developed Streamlit, Plotly, and Tableau dashboards for churn, customer segmentation, and anomaly analysis, cutting recurring manual reporting time by 50%.
+- Developed a Python churn-prediction model with 83% precision, helping the team identify at-risk customers and prioritize retention outreach.
+- Automated customer-data preparation using Airflow and AWS Lambda, reducing processing time from two hours to 15 minutes.
+- Analyzed customer cohorts and model errors to identify churn patterns and improve the features supporting retention recommendations.
+- Created Tableau and Streamlit dashboards that translated analytical findings into actionable insights and reduced manual reporting effort.
 
-`Python` `SQL` `pandas` `scikit-learn` `XGBoost` `Airflow` `PostgreSQL` `AWS Lambda` `Tableau` `Streamlit` `Plotly`
+`Python` `SQL` `Machine Learning` `Airflow` `AWS Lambda` `Tableau` `Streamlit` `Cohort Analysis`
 
 ### Software Engineer Intern — Weboni
 
 `May 2024 – August 2024`
 
-Developed APIs, testing, authentication, and monitoring for a loan-application workflow.
+**Client:** Avis Budget Group
+
+Improved test coverage, reliability, and defect visibility for a migrated self-service application.
 
 Scope of work:
 
-- Developed REST APIs for a loan-application workflow handling 50,000+ daily requests; improved response time by 40% through query optimization and Redis caching.
-- Added Jest and Cypress unit and integration tests, increasing coverage to 85% and reducing post-deployment defects by 40%.
-- Implemented OAuth 2.0/JWT authentication and Prometheus/Grafana monitoring for secure access and faster incident diagnosis.
+- Built a Playwright end-to-end testing suite for a migrated self-service application, covering booking, rental, and search workflows and adding automated checks to the deployment pipeline.
+- Helped reduce the open defect backlog from approximately 60 to 10 by resolving issues across React components and Node.js APIs.
+- Diagnosed and fixed a session-update race condition that intermittently logged customers out during booking, adding a regression test to prevent recurrence.
+- Developed a Jira-to-CSV reporting script adopted by the engagement lead to track daily defect trends and prioritize fixes.
 
-`Java` `JavaScript` `React` `REST APIs` `SQL` `PostgreSQL` `Redis` `Docker` `Jest` `Cypress` `Git` `CI/CD`
+`Playwright` `React` `Node.js` `JavaScript` `REST APIs` `Regression Testing` `Jira` `CI/CD`
 
 ### Software Engineer — Nebula Labs
 
 `August 2023 – May 2024`
 
-Built full-stack university records software across interface, service, and data layers.
+Built student-facing search and data applications across interface, service, and database layers.
 
 Scope of work:
 
-- Built full-stack features for a university records platform serving 2,000+ active users using React, Go, Python, and PostgreSQL.
-- Reduced average query latency from 500 ms to 80 ms through indexing, query-plan analysis, and schema changes.
-- Created a Jenkins and Docker CI/CD pipeline that increased deployment frequency from twice monthly to five times weekly.
+- Built and maintained student-facing search and data applications serving more than 2,000 active users, contributing across backend services, frontend features, and database integrations.
+- Reduced search latency from 500 to 80 milliseconds through database indexing, query optimization, and Redis caching.
+- Developed ingestion and validation workflows that kept application data consistent and made processing failures easier to diagnose.
+- Automated build and deployment workflows with Jenkins and Docker, enabling the team to move from twice-monthly releases to five deployments per week.
 
-`Go` `Python` `TypeScript` `React` `REST APIs` `PostgreSQL` `MongoDB` `Elasticsearch` `Docker` `Jenkins` `Git`
+`React` `Backend Services` `SQL` `Database Indexing` `Redis` `Data Validation` `Docker` `Jenkins` `CI/CD`
 
 ---
 
