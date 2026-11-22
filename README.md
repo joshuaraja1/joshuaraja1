@@ -271,6 +271,7 @@ LandIQ keeps the scoring process inspectable for non-technical acquisition revie
 
 <div align="center">
 
+<a href="https://leetcode.com/u/Rmalle/"><img src="https://img.shields.io/badge/LeetCode-Rmalle-4F46E5?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode profile for Rmalle" /></a>
 <a href="https://www.hackerrank.com/profile/Joshua_Raja_654"><img src="https://img.shields.io/badge/HackerRank-Joshua_Raja_654-6D28D9?style=for-the-badge&logo=hackerrank&logoColor=white" alt="HackerRank profile for Joshua Raja" /></a>
 
 </div>
