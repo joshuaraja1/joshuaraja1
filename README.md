@@ -1,8 +1,8 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=210&section=header&text=Joshua%20Raja&fontColor=ffffff&fontSize=52&fontAlignY=38&desc=Software%20Engineering%20%7C%20Event-Driven%20Systems%20%7C%20Data%20Platforms&descAlignY=62&descSize=17&animation=fadeIn" alt="Joshua Raja — Software Engineering, Event-Driven Systems, Data Platforms" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=210&section=header&text=Joshua%20Raja&fontColor=ffffff&fontSize=52&fontAlignY=38&desc=Software%20Engineering%20%7C%20Data%20Pipelines%20%7C%20Applied%20AI&descAlignY=62&descSize=17&animation=fadeIn" alt="Joshua Raja — Software Engineering, Data Pipelines, Applied AI" />
 
-<a href="https://github.com/joshuaraja1"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=21&duration=3000&pause=900&color=A78BFA&center=true&vCenter=true&width=820&lines=Building+reliable+data+and+backend+systems;Designing+event+flows+that+survive+retries;Measuring+the+failure+modes+that+matter" alt="Animated introduction" /></a>
+<a href="https://github.com/joshuaraja1"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=21&duration=3000&pause=900&color=A78BFA&center=true&vCenter=true&width=820&lines=Building+reliable+data+and+backend+systems;Tracing+production+defects+to+root+causes;Grounding+AI+products+in+real+source+data" alt="Animated introduction" /></a>
 
 <br/><br/>
 
@@ -30,9 +30,9 @@
 
 ## About
 
-I am a software engineer in Dallas building Python data services, event-driven backend systems, and dependable data platforms. My consulting work spans financial services, energy, and airline programs delivered inside established enterprise platforms.
+I am a software engineer in Dallas building and maintaining data pipelines, backend services, and applied AI products. My consulting experience spans financial services, energy, and airline engagements delivered inside established engineering teams.
 
-I focus on the failure modes that decide whether a system can be trusted: idempotent retries, incomplete data, schema drift, replayable processing, contract validation, and observable recovery. I also build autonomous-flight, financial-analysis, and recommendation projects where reproducible tests matter as much as the demo.
+I work on the details that decide whether software can be trusted: production defect investigation, data reconciliation, schema validation, idempotent retries, transactional outbox patterns, automated testing, release verification, and clear recovery runbooks. My independent projects extend that approach into autonomous flight, agentic finance, semantic search, and explainable risk analytics.
 
 I earned a B.S. in Computer Information Systems and Technology from UT Dallas in May 2026.
 
@@ -48,7 +48,7 @@ I earned a B.S. in Computer Information Systems and Technology from UT Dallas in
 
 ### Backend & Data
 
-<a href="https://fastapi.tiangolo.com/"><img src="https://skillicons.dev/icons?i=fastapi,spring,nodejs,postgres,mongodb,redis&theme=dark" alt="FastAPI, Spring, Node.js, PostgreSQL, MongoDB, and Redis" /></a>
+<a href="https://fastapi.tiangolo.com/"><img src="https://skillicons.dev/icons?i=fastapi,spring,nodejs,postgres,mysql&theme=dark" alt="FastAPI, Spring Boot, Node.js, PostgreSQL, and MySQL" /></a>
 
 ### Frontend
 
@@ -56,7 +56,7 @@ I earned a B.S. in Computer Information Systems and Technology from UT Dallas in
 
 ### Cloud, DevOps & Tooling
 
-<a href="https://aws.amazon.com/"><img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,githubactions,git,linux&theme=dark" alt="AWS, Docker, Kubernetes, GitHub Actions, Git, and Linux" /></a>
+<a href="https://aws.amazon.com/"><img src="https://skillicons.dev/icons?i=aws,azure,docker,githubactions,git,linux&theme=dark" alt="AWS, Azure, Docker, GitHub Actions, Git, and Linux" /></a>
 
 ---
 
@@ -64,92 +64,93 @@ I earned a B.S. in Computer Information Systems and Technology from UT Dallas in
 
 | Domain | Proficiency | Details |
 | :--- | :--- | :--- |
-| Event-driven systems | Production experience | Kafka, idempotency keys, transactional outbox, consumer deduplication, replay, and state projections |
-| Data engineering | Production experience | Snowflake, Airflow, incremental processing, partition backfills, schema contracts, and completeness reconciliation |
-| Backend engineering | Production experience | Python, Java, FastAPI, Spring, REST APIs, PostgreSQL, Redis, and service decomposition |
-| Applied machine learning | Production and project experience | scikit-learn, XGBoost, model evaluation, SageMaker, NVIDIA Triton, and monitored delivery |
-| Software quality | Production experience | pytest, Vitest, Playwright, contract tests, regression tests, simulation, and fault injection |
+| Backend engineering | Professional and project experience | Python, Java, FastAPI, Spring Boot, REST APIs, SQLModel, Kafka, and PostgreSQL |
+| Data engineering | Professional experience | Airflow, Snowflake, PySpark, reconciliation, schema validation, data-quality monitoring, and replay |
+| Applied AI and ML | Professional and project experience | scikit-learn, MLflow, LangGraph, RAG, semantic search, encoder fine-tuning, and grounded evaluation |
+| Software quality | Professional experience | pytest, JUnit, Playwright, Vitest, integration tests, regression tests, and release verification |
+| Autonomy and simulation | Project experience | ROS 2, MAVLink, MAVSDK, Gazebo, link-staleness handling, and fault injection |
 
 ---
 
 ## Featured Projects
 
 <details>
-<summary><strong>Polaris — Autonomous Fixed-Wing Aircraft Platform</strong></summary>
+<summary><strong>Polaris — Fixed-Wing Autonomy Platform for a Student-Built Aircraft</strong></summary>
 
 <br/>
 
-> An aircraft telemetry and integration platform built around ordered event processing, intermittent links, and reproducible fault injection.
+> Flight software for a custom aircraft, developed with a hardware engineering team and validated in simulation before hardware testing.
 
 | Attribute | Detail |
 | :--- | :--- |
-| Stack | Python · C++ · Linux · Kafka · Docker · FastAPI · PostgreSQL · React · ROS 2 · MAVLink |
-| Performance | Batched asynchronous consumers and compact serialization reduced telemetry processing from approximately 30 seconds to 2 seconds |
-| Reliability | Sequence numbers, arrival-cadence checks, and session ordering detect stale or out-of-order aircraft data |
-| Validation | Fault injection with gaps, duplicates, and clock skew surfaced 12 integration defects |
+| Stack | Python · C++ · ROS 2 · MAVLink · MAVSDK · Linux · Docker · Gazebo · FastAPI |
+| Mission layer | Waypoint sequencing, loiter, return-to-launch, geofence handling, and defined failure transitions |
+| Telemetry | Shared sensor and airframe-health schema with monotonic sequence numbers for dropped or out-of-order data |
+| Reliability | Companion-side link staleness detection paired with autopilot-local failsafe behavior |
+| Validation | Simulated flights with injected message gaps, duplicates, and clock skew before hardware tests |
 | Repository | [github.com/joshuaraja1/Polaris](https://github.com/joshuaraja1/Polaris) |
 
-Polaris bridges MAVLink and ROS 2 telemetry into a shared event schema, preserving order within aircraft sessions while making loss, duplication, and staleness visible during testing.
+Polaris adapts an open-source autopilot and mission stack to a student-built fixed-wing frame, then exposes mission state and channel health through a ground dashboard for bench and flight-test triage.
 
 </details>
 
 <details>
-<summary><strong>FinanceIQ — Multi-Agent Financial Analysis</strong></summary>
+<summary><strong>FinanceIQ — Beginner-Oriented Agentic Trading Platform</strong></summary>
 
 <br/>
 
-> A staged financial-analysis workflow with deterministic calculation tools, source-aware validation, and structured reporting.
+> A guided trading dashboard that brings market data, filings, news, portfolio analysis, and conversational interaction into one workflow.
 
 | Attribute | Detail |
 | :--- | :--- |
-| Stack | Python · LangGraph · LangChain · FastAPI · PostgreSQL · Next.js |
-| Architecture | Specialized ingestion, quantitative, risk, validation, and reporting stages |
-| Performance | Parallel branches and cached retrievals reduced response time from 15–20 seconds to under 4 seconds |
-| Reliability | Reported figures are checked against source data and failures are attributed to a workflow stage |
-| Impact | Fifth place, Goldman Sachs AI Challenge |
+| Stack | Python · FastAPI · LangGraph · MCP · Next.js · TypeScript · Postgres · Deepgram · Playwright · Docker |
+| Architecture | Specialized market-data, research, news, analytics, risk, alerting, rebalancing, and recommendation agents |
+| Sources | Live market and webhook feeds plus SEC filings and news, with persisted, attributable agent outputs |
+| Interaction | Contextual retrieval over the active holding, filing, or chart plus a Deepgram voice interface |
+| Reliability | Numeric calculations and order placement run through validated tools, with Playwright coverage over critical paths |
 | Repository | [github.com/joshuaraja1/financeiq](https://github.com/joshuaraja1/financeiq) |
 
-FinanceIQ moves deterministic arithmetic into tools rather than generated prose, then validates reported figures against source data before returning a report.
+FinanceIQ coordinates its agents as a dependency graph so downstream work reuses upstream findings instead of independently re-querying the same sources.
 
 </details>
 
 <details>
-<summary><strong>RideIQ — Car Search & Recommendations</strong></summary>
+<summary><strong>RideIQ — Semantic Vehicle Search and Recommendation</strong></summary>
 
 <br/>
 
-> Vehicle discovery that combines structured filters, model-generated recommendations, and explainable constraint relaxation.
+> Natural-language vehicle discovery across roughly 50,000 listings, with semantic retrieval and exact constraints where approximation is unsafe.
 
 | Attribute | Detail |
 | :--- | :--- |
-| Stack | TypeScript · Next.js · React · Supabase/PostgreSQL · SQL · Vitest |
-| Search | Priority-ordered constraint relaxation reports which requirements were dropped |
-| Ranking | Higher-priority matches remain ahead of alternatives requiring greater relaxation |
-| Quality | Test-drive booking coverage and prompt-output evaluation check consistency and unsupported claims |
-| Impact | First place, Toyota Mobility Challenge at HackTAMU 2026 |
+| Stack | Python · TypeScript · Next.js · Supabase/PostgreSQL · pgvector · Deepgram · RAG · Vitest |
+| Retrieval | Query parsing and expansion, a fine-tuned automotive encoder, dense-vector similarity, and hard specification filters |
+| Constraints | Non-negotiable requirements stay hard while softer preferences relax in declared priority order |
+| Assistant | Listing-grounded Q&A with source citations and the same retrieval path for typed and voice input |
+| Quality | Hand-labeled preference queries and Vitest coverage for relaxation order, exact matches, and unsupported claims |
 | Repository | [github.com/joshuaraja1/HackTamu2026](https://github.com/joshuaraja1/HackTamu2026) |
 
-RideIQ reports which constraints were relaxed so an over-specified search can return explainable alternatives instead of an unexplained empty result.
+RideIQ explains which softer constraints were relaxed when no exact result exists, while ensuring semantically similar listings never bypass hard requirements such as price, drivetrain, or seating.
 
 </details>
 
 <details>
-<summary><strong>LandIQ — Land Investment Screening</strong></summary>
+<summary><strong>LandIQ — Land Acquisition Risk Platform</strong></summary>
 
 <br/>
 
-> ETL, geospatial enrichment, risk scoring, and interactive analytics for land-investment decisions.
+> Explainable parcel-risk assessment across environmental, demographic, economic, and regulatory dimensions.
 
 | Attribute | Detail |
 | :--- | :--- |
-| Stack | Python · SQL · Spark · XGBoost · dbt · PostgreSQL · Airflow · AWS · Streamlit · Plotly |
-| Data | Approximately 180,000 records reconciled across four sources |
-| Quality | Duplicate, null-coordinate, range, and parcel-identity checks before model input |
-| Explainability | Dashboards expose contributing features and underlying source values |
-| Impact | First place, Lennar Innovation Challenge |
+| Stack | Python · DuckDB · pandas · scikit-learn · Streamlit · Plotly |
+| Data | Parcel records from more than eight economic, census, FEMA, listing, valuation, and agricultural sources |
+| Quality | Geographic-key normalization, missing-region handling, unit reconciliation, and duplicate/orphan parcel detection |
+| Modeling | A lightweight feed-forward network with feature attribution and explicit target-leakage investigation |
+| Explainability | Parcel polygons, spatial risk features, and dashboards tracing each component to its originating source value |
 | Repository | [github.com/joshuaraja1/LandIQ](https://github.com/joshuaraja1/LandIQ) |
 
-LandIQ uses a deterministic parcel crosswalk to avoid duplicate candidates, then exposes risk scores, contributing features, and source values so reviewers can trace results to the underlying records.
+LandIQ keeps the scoring process inspectable for non-technical acquisition reviewers, including the source value and risk contribution behind each parcel-level result.
 
 </details>
 
@@ -157,77 +158,77 @@ LandIQ uses a deterministic parcel crosswalk to avoid duplicate candidates, then
 
 ## Experience
 
-### Machine Learning Engineer — Weboni
+### Software Engineer — Weboni
 
-`June 2026 – Present · Full-Time`
+`June 2026 – Present · Contract`
 
-**Client:** Citigroup · TCS-led reference-data platform modernization
+**Engagement:** Financial services · Reference-data platform delivered through a large systems integrator
 
-- Implemented governed delivery of a reference-data domain from ingestion through curated models to downstream consumption.
-- Replaced nightly full reloads with idempotent partition-level processing and date-range replay, preventing duplicate records during backfills and restatements.
-- Added key-field checksum, referential-integrity, and schema-contract checks after row-count validation failed to detect NULL values.
-- Configured versioned model delivery through NVIDIA Triton with shadow validation and canary checks that caught a feature-scaling regression before traffic expansion.
+- Fix pipeline defects and ship scoped enhancements to a reference-data pipeline feeding downstream risk and reporting systems.
+- Traced a restated partition that passed row-count checks while populating NULL key fields to an upstream rename, then added a key-field checksum check.
+- Extended schema-drift failures to identify the affected column and expected type, and added pytest unit and integration coverage across loader and replay components.
+- Verify releases in DEV and UAT against masked extracts, monitor post-release jobs and consumer errors, and write runbooks for diagnosed failures.
 
-`Python` `SQL` `Snowflake` `Airflow` `AWS SageMaker` `NVIDIA Triton` `Datadog` `Grafana`
+`Python` `SQL` `Snowflake` `Apache Airflow` `pytest` `Splunk` `Git`
 
 ### Software Engineer — Weboni
 
-`October 2025 – May 2026 · Part-Time Co-op`
+`October 2025 – May 2026 · Contract`
 
-**Client:** Shell · Accenture-led Cortex asset-data program
+**Engagement:** Energy · Internal asset-data platform delivered through a large systems integrator
 
-- Built ingestion, curated transformations, and downstream delivery for an asset sensor-data domain.
-- Reduced nightly processing from approximately 90 minutes to 20 minutes with idempotent incremental loads and replay jobs.
-- Implemented per-tag completeness checks to distinguish missing observations from genuine zero production.
-- Converted unmapped tags and unit-normalization defects into explicit failures supported by release runbooks and rollback plans.
+- Built and maintained ingestion and reporting for site sensor and operational data consolidated from multiple upstream systems.
+- Corrected a dashboard that reported missing readings as zero by tracing an upstream tag-name change and adding per-tag presence checks.
+- Reconciled duplicate readings, out-of-order timestamps, and inconsistent units before loading, and maintained SQL and Power BI delivery views.
+- Added pytest regression coverage, repaired scheduled validation in GitHub Actions, and prepared change records with test evidence and rollback notes.
 
-`Python` `SQL` `Airflow` `Snowflake` `Kafka` `REST APIs` `Datadog` `pytest`
+`Python` `SQL` `Apache Airflow` `Azure` `Power BI` `GitHub Actions` `pytest`
 
 ### Software Engineer — Weboni
 
-`January 2025 – September 2025 · Part-Time Co-op`
+`January 2025 – September 2025 · Contract`
 
-**Client:** Southwest Airlines · Accenture-led reservation-platform modernization
+**Engagement:** Airline · Reservation services delivered through a large systems integrator
 
-- Implemented an append-only booking event store, replay projections, and parity verification for a staged cutover completed without data loss.
-- Prevented duplicate bookings after gateway retries by enforcing idempotency keys and returning the original result for repeated requests.
-- Used a transactional outbox, retry handling, and consumer deduplication to keep booking changes and downstream events consistent.
-- Added contract tests for two consumers, catching a split-passenger-record parity mismatch before rollout.
+- Delivered scoped changes to services being separated from a legacy reservations monolith, pairing with senior engineers on booking-state logic.
+- Prevented duplicate reservations after payment timeouts by adding idempotency-key handling and a regression test for the timeout-and-retry sequence.
+- Reworked a write path so booking state and its outbox record commit in one PostgreSQL transaction before asynchronous Kafka publication and retry.
+- Built staged end-to-end verification for booking, change, and cancellation flows plus comparison tests against legacy responses.
 
-`Java` `Spring` `REST APIs` `PostgreSQL` `Kafka` `Contract Testing` `Grafana`
+`Java` `Spring Boot` `REST APIs` `Kafka` `PostgreSQL` `AWS` `JUnit` `Grafana`
 
 ### Data Science Intern — Renuity
 
 `September 2024 – December 2024`
 
-- Reduced recurring customer-data preparation from approximately two hours to 15 minutes using Airflow and AWS Lambda.
-- Achieved approximately 83% precision versus a 57% baseline with a scikit-learn churn model tuned for a precise retention list.
-- Reconciled dashboard and model discrepancies by pinning both consumers to a shared, versioned dataset.
+- Cleaned and deduplicated lead and appointment records consolidated from regional brands with conflicting customer, address, and job-type definitions.
+- Mapped regional fields into a shared schema and built reusable feature tables for lead-conversion experiments.
+- Trained scikit-learn baseline classifiers with MLflow tracking, comparing class weighting with SMOTE and tuning for a precise outreach list.
+- Resolved a reporting discrepancy by pinning consumers to one versioned dataset and built Power BI views for sales and call-centre operations.
 
-`Python` `SQL` `pandas` `scikit-learn` `Airflow` `AWS Lambda` `Tableau` `Streamlit`
+`Python` `SQL` `pandas` `PySpark` `scikit-learn` `Microsoft Fabric` `MLflow` `Power BI`
 
-### Software Engineering Intern — Weboni
+### Software Engineering Intern — Avis Budget Group
 
 `May 2024 – August 2024`
 
-**Client:** Avis Budget Group · Mobility digital modernization
+- Shipped scoped booking and self-service pickup changes within a 10-week engineering internship and a structured review process.
+- Built Playwright end-to-end tests for booking, pickup, and return flows and integrated them into the deployment pipeline.
+- Traced intermittent mid-booking sign-outs to concurrent session-state writes and added the regression test reproducing the issue.
+- Prototyped a retrieval-backed policy answer feature and evaluated generated responses against source clauses for unsupported claims.
 
-- Built Playwright tests for booking, rental, and search workflows and integrated them into GitHub Actions as deployment gates.
-- Diagnosed a concurrent session-write race, serialized the write path, and added a reproducing regression test.
-- Helped reduce the post-migration defect backlog from approximately 60 open items to 10 and built a Python Jira-to-CSV trend digest.
+`JavaScript` `React` `Node.js` `Playwright` `GitHub Actions` `Jira` `AWS`
 
-`Python` `JavaScript` `React` `Node.js` `Playwright` `GitHub Actions` `Jira`
-
-### Software Engineer — Nebula Labs
+### Software Engineer — Nebula Labs, UTD Trends
 
 `August 2023 – May 2024 · Part-Time`
 
-- Built course-search and material-browsing features serving more than 2,000 active users with React, FastAPI, PostgreSQL, and Redis.
-- Reduced search latency from approximately 500 to 80 milliseconds and kept retrieval under three seconds across more than 10,000 documents.
-- Cut batch indexing from approximately four hours to 15 minutes with parallel workers and checkpointed progress.
-- Increased deployment frequency from twice-monthly releases to approximately five per week through Jenkins and Docker.
+- Contributed to an open-source academic planning platform for roughly 10,000 enrolled students through small, reviewed pull requests.
+- Built professor and course comparison views joining registrar grade distributions with instructor reviews despite inconsistent names and course identifiers.
+- Worked on a retrieval assistant over course material, syllabi, and grade data using Chroma and evaluated answers against retrieved passages.
+- Added schedule-planner conflict handling, containerized database integration tests, regression fixes, and planning documentation.
 
-`Python` `TypeScript` `React` `FastAPI` `PostgreSQL` `Redis` `Docker` `Jenkins`
+`Python` `FastAPI` `SQLModel` `PostgreSQL` `MySQL` `React` `Chroma` `Docker` `GitHub Actions`
 
 ---
 
@@ -325,12 +326,13 @@ LandIQ uses a deterministic parcel crosswalk to avoid duplicate candidates, then
 
 ```yaml
 Learning:
-  - Distributed systems and resilient backend architecture
-  - Reliable event processing and data contracts
+  - Resilient backend architecture and enterprise integration
+  - Reliable data processing, schema validation, and observability
 
 Building:
-  - Python data services and event-driven systems
-  - Polaris aircraft telemetry and fault-injection systems
+  - Data pipelines and backend services in Python and Java
+  - Grounded AI products, semantic search, and agent orchestration
+  - Polaris fixed-wing autonomy and simulation tooling
 
 Exploring:
   - Applied AI evaluation and deterministic tool use
@@ -339,7 +341,7 @@ Exploring:
 Open To:
   - Software engineering roles
   - Backend and data engineering opportunities
-  - Applied AI/ML engineering
+  - Applied AI and forward-deployed engineering
 ```
 
 ---
