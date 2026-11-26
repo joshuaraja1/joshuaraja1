@@ -74,7 +74,7 @@ I earned a B.S. in Computer Information Systems and Technology from UT Dallas in
 
 ## Featured Projects
 
-<details>
+<details open>
 <summary><strong>Polaris — Fixed-Wing Autonomy Platform for a Student-Built Aircraft</strong></summary>
 
 <br/>
@@ -92,9 +92,11 @@ I earned a B.S. in Computer Information Systems and Technology from UT Dallas in
 
 Polaris adapts an open-source autopilot and mission stack to a student-built fixed-wing frame, then exposes mission state and channel health through a ground dashboard for bench and flight-test triage.
 
+The hardware team designed the airframe and avionics while I owned the flight-software integration. I matched message routing, parameters, and actuator mapping to the simulated airframe before hardware testing. The companion detects stale telemetry, while the autopilot handles return-to-launch locally when the uplink is lost. Flight replays with injected gaps, duplicates, and clock skew exposed readings that could otherwise appear current.
+
 </details>
 
-<details>
+<details open>
 <summary><strong>FinanceIQ — Beginner-Oriented Agentic Trading Platform</strong></summary>
 
 <br/>
@@ -112,9 +114,11 @@ Polaris adapts an open-source autopilot and mission stack to a student-built fix
 
 FinanceIQ coordinates its agents as a dependency graph so downstream work reuses upstream findings instead of independently re-querying the same sources.
 
+The Next.js dashboard and Python backend combine live feeds, SEC filings, news, and portfolio context for users new to investing. MCP tools connect the data sources, and the filings and news agents persist attributable findings. Questions about a holding, chart, or filing retrieve context from that object. Deepgram speech uses the same tool layer as the visual interface; calculations and order placement go through validated tools. Playwright tests and per-stage logs catch unsupported agent output.
+
 </details>
 
-<details>
+<details open>
 <summary><strong>RideIQ — Semantic Vehicle Search and Recommendation</strong></summary>
 
 <br/>
@@ -132,9 +136,11 @@ FinanceIQ coordinates its agents as a dependency graph so downstream work reuses
 
 RideIQ explains which softer constraints were relaxed when no exact result exists, while ensuring semantically similar listings never bypass hard requirements such as price, drivetrain, or seating.
 
+The search pipeline parses natural-language needs such as towing, family seating, fuel cost, and cargo space; retrieves similar listings using a fine-tuned automotive encoder and pgvector; then applies exact specification filters. When no listing satisfies every preference, the system relaxes softer ones in priority order and tells the buyer what changed. A listing-grounded assistant cites specifications and seller descriptions. Deepgram voice input follows the same retrieval path, and hand-labeled queries plus Vitest cases check ranking, zero-match behavior, and unsupported feature claims.
+
 </details>
 
-<details>
+<details open>
 <summary><strong>LandIQ — Land Acquisition Risk Platform</strong></summary>
 
 <br/>
@@ -151,6 +157,8 @@ RideIQ explains which softer constraints were relaxed when no exact result exist
 | Repository | [github.com/joshuaraja1/LandIQ](https://github.com/joshuaraja1/LandIQ) |
 
 LandIQ keeps the scoring process inspectable for non-technical acquisition reviewers, including the source value and risk contribution behind each parcel-level result.
+
+The preparation layer reconciles more than eight sources with different geographic keys, units, and reporting cadences. It catches missing coverage and parcel joins that would duplicate or orphan records, then derives tract-specific flood, storm, and infrastructure features. A lightweight feed-forward model produces parcel scores. Feature attribution raised a suspicious input; tracing its construction confirmed that it contained information unavailable at prediction time. Streamlit and Plotly views expose each score component and its originating source value.
 
 </details>
 
